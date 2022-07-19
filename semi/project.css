@@ -1,0 +1,53 @@
+* {
+  margin: 0; /* 마진 리셋 */
+  padding: 0; /* 패딩 리셋 */
+  box-sizing: border-box; /* 박스 영역은 테두리까지 */
+}
+a {
+  text-decoration: none; /* 텍스트 링크 밑줄 없애기 */
+}
+ul {
+  list-style: none;
+}
+
+#container {
+  margin: 0 auto; /* 화면 중앙에 배치 */
+  width: 1200px; /* 너비 */
+}
+
+/*********************************/
+/* 헤더 영역 - 로고와 내비게이션 */
+/*********************************/
+
+header {
+  width: 100%; /*  너비 */
+  height: 100px; /* 높이 */
+  background-color: rgb(62, 70, 75);
+}
+
+/* 로고 */
+#logo {
+  float: left; /* 왼쪽으로 플로팅 */
+  width: 250px; /*  너비 */
+  height: 100px; /* 높이 */
+  line-height: 100px; /* 세로로 중간에 맞춤 - 줄간격을 높이 값과 같게 */
+  padding-left: 20px; /* 왼쪽에 여백 */
+}
+#logo h1 {
+  font-family: "Merienda", cursive;
+  font-weight: 700;
+  font-size: 40px; /* 글자 크기 */
+  color: #fff; /* 글자 색*/
+  text-shadow: 0 -1px 0 #222; /* 그림자 색 */
+  /* text-align: center; */
+  justify-content: center;
+}
+
+/* 내비게이션 */
+nav {
+  float: right; /* 오른쪽으로 플로팅 */
+  width: 900px; /*   너비 */
+  height: 100px; /* 메뉴 영역 높이 */
+  padding-top: 40px; /* 메뉴를 아래로 내리기 위해 */
+  justify-content: center;
+}
