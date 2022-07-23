@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OhGYM - HOME</title>
+    <link rel="stylesheet" href="./mainpage.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="header">
+      <nav class="top-bar">
+        <li><a href="#">BOOKMARK</a></li>
+      </nav>
+    </div>
+    <div class="logo">
+        <h1>OHGYM</h1>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyBJZW9NZF8C4Jt8rvdL7i3BDR_c_S3v76M",
+        authDomain: "semi-project-9261f.firebaseapp.com",
+        databaseURL: "https://semi-project-9261f-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "semi-project-9261f",
+        storageBucket: "semi-project-9261f.appspot.com",
+        messagingSenderId: "412207407765",
+        appId: "1:412207407765:web:f10778cd22a790c3d9719c",
+        measurementId: "G-9LW5P71WB6",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <!-- bootstrap 네비게이션바 시작 -->
+    <div class="nav-start">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- HOME 시작 -->
+              <li class="nav-item m-5">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <!-- HOME 끝 -->
+              <!-- 센터소개 시작 -->
+              <li class="nav-item dropdown m-5">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 센터소개 </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">신념</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">오시는길</a></li>
+                </ul>
+              </li>
+              <!-- 센터소개 끝 -->
+              <!-- 트레이너소개 시작 -->
+              <li class="nav-item dropdown m-5">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 트레이너소개 </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">강사프로필</a></li>
+                  <li><a class="dropdown-item" href="#">수업시간표</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">강사지원</a></li>
+                </ul>
+              </li>
+              <!-- 트레이너소개 끝 -->
+              <!-- 프로그램안내 시작 -->
+              <li class="nav-item dropdown m-5">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 프로그램안내 </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">PT</a></li>
+                  <li><a class="dropdown-item" href="#">필라테스</a></li>
+                  <li><a class="dropdown-item" href="#">스피닝</a></li>
+                  <li><a class="dropdown-item" href="#">스크린 골프</a></li>
+                </ul>
+              </li>
+              <!-- 프로그램안내 끝 -->
+              <!-- 프로그램예약 시작 -->
+              <li class="nav-item dropdown m-5">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 프로그램예약 </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">강사프로필</a></li>
+                  <li><a class="dropdown-item" href="#">수업시간표</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">강사 문의</a></li>
+                </ul>
+              </li>
+              <!-- 프로그램예약 끝 -->
+              <!-- 커뮤니티 시작 -->
+              <li class="nav-item dropdown m-5">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 커뮤니티 </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">공지사항</a></li>
+                  <li><a class="dropdown-item" href="#">자주 묻는 질문</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">카카오톡 1:1상담</a></li>
+                </ul>
+              </li>
+              <!-- 커뮤니티 끝 -->
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+            </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- bootstrap 네비게이션바 끝 -->
+
+    <!-- 각 카테고리의 콘텐츠를 담아야합니다. 여기에 코딩해주세요 !!!!! -->
+    <div class="center">
+      <div class="back">
+        <div>
+          <h3>A sound mind in a sound body</h3>
+        </div>
+        <div>
+          <h5>-John Locke-</h5>
+        </div>
+      </div>
+    </div>
+    <div class="three_box">
+      <!-- box1 시작 -->
+      <div class="box1">
+        <h3>공지사항&이벤트</h3>
+      </div>
+      <!-- box1 끝 -->
+      <!-- box2 시작 -->
+      <div class="box2">
+        <div id="map" style="width: 420px; height: 230px"></div>
+        <script src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=21af3de848f44d872f10ddf66ca283da"></script>
+      </div>
+      <script>
+        const mapContainer = document.getElementById("map"), // 지도를 표시할 div
+          mapOption = {
+            center: new kakao.maps.LatLng(37.4989810000002, 127.02872089999939), // 지도의 중심좌표
+            level: 3, // 지도의 확대 레벨
+            mapTypeId: kakao.maps.MapTypeId.ROADMAP, // 지도종류
+          };
+        // 지도를 생성한다
+        const map = new kakao.maps.Map(mapContainer, mapOption);
+        // 지도에 마커를 생성하고 표시한다
+            // 지도 타입 변경 컨트롤을 생성한다
+      const mapTypeControl = new kakao.maps.MapTypeControl();
+      // 지도의 상단 우측에 지도 타입 변경 컨트롤을 추가한다
+      map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);	
+      // 지도에 확대 축소 컨트롤을 생성한다
+      const zoomControl = new kakao.maps.ZoomControl();
+      // 지도의 우측에 확대 축소 컨트롤을 추가한다
+      map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+        const marker = new kakao.maps.Marker({
+          position: new kakao.maps.LatLng(37.4989810000002, 127.02872089999939), // 마커의 좌표
+          map: map, // 마커를 표시할 지도 객체
+        });
+      </script>
+      <!-- box2 끝 -->
+      <!-- box3 시작 -->
+      <div class="box3"><img src="./cs_ban01.jpg" alt=""></div>
+    </div>
+  <!-- box3 끝 -->
+    <!-- 각 카테고리의 콘텐츠를 담아야합니다. 여기에 코딩해주세요 !!!!! -->
+    
+    <footer class="info">
+      <nav>
+        <div class="link">
+          <p>
+            GitHub
+            <a href="#">@slalom0914</a>
+            <a href="#">@yihyunkong</a>
+            <a href="#">@congs00n</a>
+            <a href="#">@qcmcm2</a>
+            <a href="#">@dongcarry96</a>
+          </p>
+        </div>
+        <div class="addr">
+          <p>
+            사업자등록번호: 128-23-45267 | 대표 : 김승수 | 개인정보보호책임자: 김승수 | 이메일 : dev_js@gmail.com | 강남지원 1관 : 서울특별시 강남구
+            테헤란로14길 6 남도빌딩 2F
+          </p>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>
