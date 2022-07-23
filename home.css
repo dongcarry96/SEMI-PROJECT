@@ -1,0 +1,111 @@
+* {
+    border: 1px solid red;
+}
+
+.header {
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+nav.top-bar {
+    color: white;
+    font-size: 15px;
+    list-style: none;
+    padding-left: 20px;
+}
+
+h1 {
+    margin: 20px;
+    text-align: center;
+    font-size: 90px;
+}
+
+.category {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.menu {
+    /* display: flex; */
+    background-color: rgb(243, 243, 243);
+    list-style: none;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.menu li {
+    font-size: 20px;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    justify-content: space-around;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+div.contents {
+    background-color: aliceblue;
+    width: 100%;
+    height: 600;
+}
+
+.home {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.bottom-box {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bottom-box > .community {
+    width: 350px;
+    height: 350px;
+    margin-right: 19px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgb(243, 243, 243);
+}
+
+.bottom-box > .map {
+    width: 350px;
+    height: 350px; 
+    margin-right: 18px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgb(243, 243, 243);
+}
+
+.bottom-box > .time {
+    width: 350px;
+    height: 350px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgb(243, 243, 243);
+}
+
+header {
+    height: 40px;
+    background-color: black;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 20px 20px 0 0;
+}
+
+footer.info {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+div.contents-box {
+    /* 여기에 각 카테고리별로 css 적용하지면 됩니다.*/
+}
