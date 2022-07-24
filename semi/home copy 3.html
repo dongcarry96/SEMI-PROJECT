@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OhGYM - HOME</title>
+    <link rel="stylesheet" href="./home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.9.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.9.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.9.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.9.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.9.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.9.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.9.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.9.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.9.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.9.0/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </head>
+<body>
+    <div class="header">
+        <nav class="top-bar">
+            <li><a href="#">BOOKMARK</a></li>
+        </nav>
+    </div>
+    <h1 class="">OhGYM</h1>
+    <div class="category">
+        <nav class="menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">센터소개</a></li>
+            <li><a href="#">트레이너소개</a></li>
+            <li><a href="#">프로그램안내</a></li>
+            <li><a href="#">프로그램예약</a></li>
+            <li><a href="#">커뮤니티</a></li>
+        </nav>
+    </div>
+
+    <!-- 각 카테고리의 콘텐츠를 담아야합니다. 여기에 코딩해주세요 !!!!! -->
+    <!-- 성욱 코딩... -->
+    <!-- bootstrap 네비게이션바 시작 -->
+    <div class="nav-start">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- HOME 시작 -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <!-- HOME 끝 -->
+              <!-- 센터소개 시작 -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 센터소개 </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">연혁</a></li>
+                  <li><a class="dropdown-item" href="#">신념</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">오시는길</a></li>
+                </ul>
+              </li>
+              <!-- 센터소개 끝 -->
+              <!-- 트레이너소개 시작 -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 트레이너소개 </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">강사프로필</a></li>
+                  <li><a class="dropdown-item" href="#">수업시간표</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">강사지원</a></li>
+                </ul>
+              </li>
+              <!-- 트레이너소개 끝 -->
+              <!-- 프로그램안내 시작 -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 프로그램안내 </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">PT</a></li>
+                  <li><a class="dropdown-item" href="#">필라테스</a></li>
+                  <li><a class="dropdown-item" href="#">스피닝</a></li>
+                  <li><a class="dropdown-item" href="#">스크린 골프</a></li>
+                </ul>
+              </li>
+              <!-- 프로그램안내 끝 -->
+              <!-- 프로그램예약 시작 -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 프로그램예약 </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">강사프로필</a></li>
+                  <li><a class="dropdown-item" href="#">수업시간표</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">강사 문의</a></li>
+                </ul>
+              </li>
+              <!-- 프로그램예약 끝 -->
+              <!-- 커뮤니티 시작 -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 커뮤니티 </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">공지사항</a></li>
+                  <li><a class="dropdown-item" href="#">자주 묻는 질문</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">카카오톡 1:1상담</a></li>
+                </ul>
+              </li>
+              <!-- 커뮤니티 끝 -->
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+            </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- bootstrap 네비게이션바 끝 -->
+    <!-- 카드시작 -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/필라테스양말.jpeg" style="width: auto; min-width: auto;" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">지점장</h5>
+            <h4 class="card-name">김승수1</h4>
+            <p class="card-text">나의 사명은 oh gym에 찾아오는 모든 사람들이 웨이트 트레이닝에 대해 흥미를 갖을 수 있게 도와드리는것이다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/필라테스1.jpeg" class="card-img-top" alt="..." width="auto" height="300">
+          <div class="card-body">
+            <h5 class="card-title">팀장(PT)</h5>
+            <h4 class="card-name">김승수2</h4>
+            <p class="card-text">나의 사명은 oh gym에 찾아오는 모든 사람들이 웨이트 트레이닝에 대해 흥미를 갖을 수 있게 도와드리는것이다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://img.freepik.com/free-photo/side-view-of-man-playing-golf-on-the-field-with-club_23-2148822938.jpg?w=2000" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">오전트레이너(필라테스)</h5>
+            <h4 class="card-name">김승수3</h4>
+            <p class="card-text">나의 사명은 oh gym에 찾아오는 모든 사람들이 웨이트 트레이닝에 대해 흥미를 갖을 수 있게 도와드리는것이다.</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col">
+        <div class="card h-100">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+      <!-- 카드끝 -->
+    <!-- 각 카테고리의 콘텐츠를 담아야합니다. 여기에 코딩해주세요 !!!!! -->
+
+    <footer class="info">
+        <nav>
+            <div class="link">
+                <p>GitHub
+                    <a href="#">@slalom0914</a>
+                    <a href="#">@yihyunkong</a>
+                    <a href="#">@congs00n</a>
+                    <a href="#">@qcmcm2</a>
+                    <a href="#">@dongcarry96</a>
+                </p>
+            </div>
+            <div class="addr">
+                <p>
+                    사업자등록번호: 128-23-45267 | 대표 : 김승수
+                | 개인정보보호책임자: 김승수 | 이메일 : dev_js@gmail.com
+                | 강남지원 1관 : 서울특별시 강남구 테헤란로14길 6 남도빌딩 2F
+                </p>
+            </div>
+        </nav>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBAq9FZ6G6L53L2GHCOhpwwjHZdve95OKQ",
+        authDomain: "ohgym-d4001.firebaseapp.com",
+        databaseURL: "https://ohgym-d4001-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "ohgym-d4001",
+        storageBucket: "ohgym-d4001.appspot.com",
+        messagingSenderId: "160838910273",
+        appId: "1:160838910273:web:9093512f1082406375e1c0"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
+      <script>
+      const db = firebase.firestore();
+      db.collection("classes")
+        .get()
+        .then((snapshot) => {
+          // snapshot is array
+          snapshot.forEach((item) => {
+            console.log(item.data());
+          });
+        });
+    </script>
+</body>
+</html>
