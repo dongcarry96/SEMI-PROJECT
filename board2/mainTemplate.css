@@ -1,0 +1,345 @@
+/* * {
+    border: 1px solid red
+} */
+
+/***************************** header CSS 시작 ******************************/
+header {
+    background-color: skyblue;
+    background: url("/imgs/gym-back.jpeg");
+}
+
+.tap {
+    padding: 10px;
+}
+
+.tap a {
+    color: white;
+    padding: 0px 5px 0px 5px;
+    font-size: 15px;
+}
+
+.membership {
+    float: right;
+}
+
+.logo h1 {
+    padding: 10px 10px 10px 10px;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    font-size: 70px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+}
+
+.logo a {
+    text-decoration: none; color: hwb(0 100% 0%);
+}
+
+
+.logo img {
+    display: inline-block;
+    margin-bottom: 13px;
+}
+
+.contents {
+    padding: 50px 100px 50px 100px;
+
+}
+/****************************** header CSS 끝 *******************************/
+
+
+
+/***************************** session CSS 시작 ******************************/
+
+/**********list-page.html의 페이징************/
+.list-box{
+    margin-bottom: 500px;
+    padding-bottom: 30px;
+}
+
+.notice-pager{
+    text-align: center;
+    font-size: x-large;
+}
+.pager{
+    display: inline-block;
+}
+.right {
+    float: right;
+}
+
+section>h3{
+    font-size: 20px;
+}
+
+#text-search{
+    font-size: 20px;
+}
+
+#btn-search{
+    font-size: 20px;
+}
+
+.search-form select{
+    font-size: 25px;
+}
+
+.search-form label{
+    width: 100px;
+    height: 30px;
+    background-color: gray;
+    font-size: large;
+    color: white;
+}
+
+.d-write{
+    margin-bottom: 10px;
+    float: left;
+}
+
+/*****table*****/
+.table {
+    font-size: x-large;
+}
+
+/********* dtail-page.html *********/
+.btn-list {
+    padding:20px 10px 0px 10px;
+    text-align: right;
+
+}
+
+.dtail-body {
+    background-color: #fafbec;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 0px 600px 20px;
+    /* margin-bottom: 300px; */
+}
+
+.backToList{
+    border-radius: 10px;
+    border-style: none;
+    font-size: x-large;
+    color: #737373;
+    width: 100px;
+    height: 50px;
+}
+
+#title-label{
+    padding-bottom: 28px;
+}
+
+#title{
+    /* text-align: center; */
+    display: inline-block;
+    color: #33353d;
+    font-size: 70px;
+    font-weight: bolder;
+    margin: 100px 0px 60px 30px;
+}
+
+label.writer{
+    margin-right: 5px;
+    color:#33353d;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+label.regdate{
+    font-size: 25px;
+}
+
+.content{
+    font-size: 30px;
+    padding-left: 30px;
+    padding-bottom: 500px;
+    padding-right: 30px;
+}
+
+.title-URL{
+    color: #69696a;
+}
+
+#q-a{
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right:400px
+}
+
+
+
+
+/****************************** session CSS 끝 *******************************/
+
+
+
+/****************************** footer CSS 시작 *******************************/
+.site-footer {
+    background-color:rgb(247, 247, 241);
+    padding:45px 0 20px;
+    font-size:15px;
+    line-height:24px;
+    color:#737373;
+}
+
+.site-footer hr {
+    border-top-color:#bbb;
+    opacity:0.5
+}
+
+.site-footer hr.small {
+    margin:20px 0
+}
+
+.site-footer h6 {
+    color: black;
+    font-size:16px;
+    text-transform:uppercase;
+    margin-top:5px;
+    letter-spacing:2px
+}
+
+.site-footer a {
+    color:#737373;
+}
+
+.site-footer a:hover {
+    color:#3366cc;
+    text-decoration:none;
+}
+
+.footer-links {
+    padding-left:0;
+    list-style:none
+}
+
+.footer-links li {
+    display:block
+}
+
+.footer-links a {
+    color:#737373
+}
+
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover {
+    color:#3366cc;
+    text-decoration:none;
+}
+
+.footer-links.inline li {
+    display:inline-block
+}
+
+.site-footer .social-icons {
+    text-align:right
+}
+
+.site-footer .social-icons a {
+    width:40px;
+    height:40px;
+    line-height:40px;
+    margin-left:6px;
+    margin-right:0;
+    border-radius:100%;
+    background-color:#33353d
+}
+
+.copyright-text {
+    margin:0
+}
+
+@media (max-width:991px) {
+    .site-footer [class^=col-]
+    {
+    margin-bottom:30px
+    }
+}
+
+@media (max-width:767px) {
+    .site-footer
+    {
+    padding-bottom:0
+    }
+    .site-footer .copyright-text,.site-footer .social-icons
+    {
+    text-align:center
+    }
+}
+
+.social-icons {
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none
+}
+
+.social-icons li {
+    display:inline-block;
+    margin-bottom:4px
+}
+
+.social-icons li.title {
+    margin-right:15px;
+    text-transform:uppercase;
+    color:#96a2b2;
+    font-weight:700;
+    font-size:13px
+}
+
+.social-icons a {
+    background-color:#eceeef;
+    color:#818a91;
+    font-size:16px;
+    display:inline-block;
+    line-height:44px;
+    width:44px;
+    height:44px;
+    text-align:center;
+    margin-right:8px;
+    border-radius:100%;
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear
+}
+
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover {
+    color:#fff;
+    background-color:#29aafe
+}
+
+.social-icons.size-sm a {
+    line-height:34px;
+    height:34px;
+    width:34px;
+    font-size:14px
+}
+
+.social-icons a.facebook:hover {
+    background-color:#3b5998
+}
+
+.social-icons a.twitter:hover {
+    background-color:#00aced
+}
+
+.social-icons a.instagram:hover {
+    background-color:#007bb6
+}
+
+.social-icons a.envelope:hover {
+    background-color:#ea4c89
+}
+
+@media (max-width:767px) {
+    .social-icons li.title
+    {
+    display:block;
+    margin-right:0;
+    font-weight:600
+    }
+}
+/******************************** footer CSS 끝 ********************************/
+
+
+
+

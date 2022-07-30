@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- 부트스트랩 사용 -->
+    <link rel="stylesheet" href="./mainTemplate.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>version1.1 list-page.html</title>
+
+  </head>
+  <!-- BODY 시작! -->
+  <body>
+    <!------------------------- header 시작 ------------------------->
+    <header class="header">
+      <!-- 북마크/로그인/회원가입 시작 -->
+      <div class="tap">
+          <a href="#">BOOKMARK</a>
+          <div class="membership">
+              <a href="#">LOGIN</a>
+              <a href="#">JOIN</a>
+          </div>  
+      </div>
+      <!-- 북마크/로그인/회원가입 끝 -->
+      <!-- logo 시작 -->
+      <div class="logo">
+          <h1>
+              <img src="/imgs/logo-ohgym.png" width="75" height="70">
+              <a href="./mainTemplate.html">OH GYM</a>
+          </h1>
+      </div>
+      <!-- logo 끝 -->
+  </header>
+  <!-------------------------- header 끝 -------------------------->
+
+  <!------------------------- navbar 시작 ------------------------->
+  <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+    <div class="container">
+        <button class="navbar-toggler d-none" data-toggle="collapse" data-target="#navcol-1">
+            <span class="sr-only">이거 도대체 뭔데..</span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav w-100 justify-content-between">
+                <!-- dropDown li 시작 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="./mainTemplate.html">HOME</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">센터 소개</a>
+                    <div class="dropdown-menu" role="menu">
+                        <a class="dropdown-item" role="presentation" href="#">시설 소개</a>
+                        <a class="dropdown-item" role="presentation" href="#">기구 소개</a>
+                        <a class="dropdown-item" role="presentation" href="#">오시는 길</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">트레이너 소개</a>
+                    <div class="dropdown-menu" role="menu">
+                        <a class="dropdown-item" role="presentation" href="#">강사 소개</a>
+                        <a class="dropdown-item" role="presentation" href="#">수업 시간표</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle nav-link" data-toggle="dropdown" data-display="static" aria-expanded="false" href="#">프로그램 안내</a>
+                    <div class="dropdown-menu" role="menu">
+                        <a class="dropdown-item" role="presentation" href="#">P.T</a>
+                        <a class="dropdown-item" role="presentation" href="#">스피닝</a>
+                        <a class="dropdown-item" role="presentation" href="#">필라테스</a>
+                        <a class="dropdown-item" role="presentation" href="#">스크린 골프</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle nav-link" data-toggle="dropdown" data-display="static" aria-expanded="false" href="#">프로그램 예약</a>
+                    <div class="dropdown-menu" role="menu">
+                        <a class="dropdown-item" role="presentation" href="#">First Item</a>
+                        <a class="dropdown-item" role="presentation" href="#">Second Item</a>
+                        <a class="dropdown-item" role="presentation" href="#">Third Item</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle nav-link" data-toggle="dropdown" data-display="static" aria-expanded="false" href="#">커뮤니티</a>
+                    <div class="dropdown-menu" role="menu">
+                        <a class="dropdown-item" role="presentation" href="./list-page.html">공지사항</a>
+                        <a class="dropdown-item" role="presentation" href="./ask-page.html">자주하는 질문</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-------------------------- navbar 끝 -------------------------->
+
+  <!------------------------- section 시작 ------------------------->
+  <section>
+    <div class="contents">
+
+      <div class="jumbotron">
+        <h1>
+          <span style="color:white">"Q&A 페이지 입니다."</span>
+        </h1>
+        <p>
+          <span style="color:white"><strong>자세한 상담을 원하시면 카카오톡 OhGym 휘트니스 채널을 추가해 주세요. </strong></span>
+          <!-- API ui 블록 -->
+          <div class="right"
+              id="kakao-talk-channel-add-button"
+              data-channel-public-id="_xhXLRxj"
+              data-size="large"
+              data-support-multiple-densities="true">
+          </div>
+        </p>
+      </div>
+      
+      <hr>
+
+<!-- q&a 문서 넣을 부분 -->
+    <div id="q-a">
+        <img src="/imgs/q1.png">
+        <hr>
+        <img src="/imgs/q2.png">
+        <hr>
+        <img src="/imgs/q2.png">
+        <hr>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- API 스크립트 시작  **** 나중에 js 파일로 분리 예정입니다. -->
+  <script>
+    window.kakaoAsyncInit = function() {
+      Kakao.Channel.createAddChannelButton({
+        container: '#kakao-talk-channel-add-button',
+      });
+    };
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://developers.kakao.com/sdk/js/kakao.channel.min.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    })(document, 'script', 'kakao-js-sdk');
+  </script>
+  
+<!-- API 스크립트 끝  -->
+<!-- *************************************** 카카오톡 채널추가 API 부분 ************************************* -->
+<!-- main끝 -->
+<!------------------------------------------------------- 채은 영역 끝 ------------------------------------->
+
+<!-------------------------- footer 시작 ------------------------->
+<footer class="site-footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">어쩌구 저쩌구 어바웃~~</p>
+          </div>
+          <div class="col-xs-6 col-md-3">
+              <h6>Categories</h6>
+              <ul class="footer-links">
+                  <li><a href="http://scanfcode.com/category/c-language/">1</a></li>
+                  <li><a href="http://scanfcode.com/category/front-end-development/">2</a></li>
+                  <li><a href="http://scanfcode.com/category/back-end-development/">3</a></li>
+                  <li><a href="http://scanfcode.com/category/java-programming-language/">4</a></li>
+                  <li><a href="http://scanfcode.com/category/android/">5</a></li>
+                  <li><a href="http://scanfcode.com/category/templates/">6</a></li>
+              </ul>
+          </div>
+          <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                  <li><a href="http://scanfcode.com/about/">1</a></li>
+                  <li><a href="http://scanfcode.com/contact/">2</a></li>
+                  <li><a href="http://scanfcode.com/contribute-at-scanfcode/">3</a></li>
+                  <li><a href="http://scanfcode.com/privacy-policy/">4</a></li>
+                  <li><a href="http://scanfcode.com/sitemap/">5</a></li>
+              </ul>
+          </div>
+      </div>
+      <hr>
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by Scanfcode.</p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                  <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                  <li><a class="envelope" href="#"><i class="fa fa-envelope"></i></a></li>   
+              </ul>
+          </div>
+      </div>
+  </div>
+</footer>
+<!------------------------- footer 끝 ------------------------>    
+
+
+
+
+
+
+</body>
+</html>
